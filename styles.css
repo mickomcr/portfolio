@@ -1,117 +1,65 @@
-/* General Styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
   background: #333;
   color: #fff;
-  padding: 40px 0;
-  text-align: center;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.dark-mode-toggle:hover {
+  background: #555;
 }
 
-header p {
-  margin: 10px 0 0;
-  font-size: 1.2rem;
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f4f4f4;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0;
+body.dark-mode .hero {
+  background: linear-gradient(135deg, #333, #555);
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+body.dark-mode .project-card {
+  background: #333;
+  color: #f4f4f4;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+body.dark-mode .btn {
+  background: #ff6f61;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+body.dark-mode .btn:hover {
+  background: #ff3b2f;
 }
 
-section {
-  margin: 40px 0;
-}
-
-h2 {
-  font-size: 2rem;
-  border-bottom: 2px solid #333;
-  padding-bottom: 10px;
+/* Filter Buttons */
+.filter-buttons {
   margin-bottom: 20px;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card h3 {
-  margin-top: 0;
-  font-size: 1.5rem;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #333;
-  text-decoration: none;
-  border: 1px solid #333;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.project-card a:hover {
-  background: #333;
-  color: #fff;
-}
-
-footer {
   text-align: center;
-  padding: 20px 0;
-  background: #333;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #6a11cb;
   color: #fff;
-  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-btn.active {
+  background: #ff6f61;
+}
+
+.filter-btn:hover {
+  background: #2575fc;
 }

@@ -1,65 +1,97 @@
-/* Dark Mode Toggle */
-.dark-mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #333;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.3s ease;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.dark-mode-toggle:hover {
-  background: #555;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f9;
 }
-
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #1a1a1a;
-  color: #f4f4f4;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
-
-body.dark-mode .hero {
-  background: linear-gradient(135deg, #333, #555);
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
-body.dark-mode .project-card {
-  background: #333;
-  color: #f4f4f4;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
 }
-
-body.dark-mode .btn {
-  background: #ff6f61;
+.navbar ul li {
+    margin-left: 20px;
 }
-
-body.dark-mode .btn:hover {
-  background: #ff3b2f;
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
-
-/* Filter Buttons */
-.filter-buttons {
-  margin-bottom: 20px;
-  text-align: center;
+.navbar ul li a:hover {
+    color: #f4f4f9;
 }
-
-.filter-btn {
-  padding: 10px 20px;
-  margin: 5px;
-  background: #6a11cb;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+.hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
 }
-
-.filter-btn.active {
-  background: #ff6f61;
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
-
-.filter-btn:hover {
-  background: #2575fc;
+.hero .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.hero .btn:hover {
+    background: #555;
+}
+.about, .projects, .skills, .contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+.project-card {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact form button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }

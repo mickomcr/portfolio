@@ -1,94 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Dark Mode Toggle -->
-  <button id="dark-mode-toggle" class="dark-mode-toggle">
-    <i class="fas fa-moon"></i>
-  </button>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Creative Thinker</p>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <p>Hello! I'm a passionate web developer with experience in building responsive and user-friendly websites. I love turning ideas into reality through code. When I'm not coding, I enjoy hiking, photography, and exploring new technologies.</p>
-      <a href="#" class="btn">Download Resume</a>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="filter-buttons">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="web">Web</button>
-      <button class="filter-btn" data-filter="mobile">Mobile</button>
-      <button class="filter-btn" data-filter="design">Design</button>
-    </div>
-    <div class="project-grid">
-      <div class="project-card" data-category="web">
-        <img src="assets/images/project1.jpg" alt="Project 1">
-        <div class="project-info">
-          <h3>Project 1</h3>
-          <p>A brief description of your project. What technologies did you use? What problem did it solve?</p>
-          <a href="#" class="btn">View Project</a>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Your Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <div class="project-card" data-category="mobile">
-        <img src="assets/images/project2.jpg" alt="Project 2">
-        <div class="project-info">
-          <h3>Project 2</h3>
-          <p>Another project description. Highlight your skills and achievements.</p>
-          <a href="#" class="btn">View Project</a>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Web Developer | Designer | Innovator</p>
+            <a href="#about" class="btn">Learn More</a>
         </div>
-      </div>
-      <div class="project-card" data-category="design">
-        <img src="assets/images/project3.jpg" alt="Project 3">
-        <div class="project-info">
-          <h3>Project 3</h3>
-          <p>Yet another project description. Showcase your versatility and creativity.</p>
-          <a href="#" class="btn">View Project</a>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with experience in creating interactive and modern web applications...</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="container">
-    <h2>Contact Me</h2>
-    <div class="contact-content">
-      <p>If you'd like to get in touch, feel free to reach out!</p>
-      <ul class="social-links">
-        <li><a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i> Email</a></li>
-        <li><a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-        <li><a href="https://linkedin.com/in/your-username" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of the project...</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of the project...</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+   <!-- <script src="script.js"></script> -->
 </body>
 </html>

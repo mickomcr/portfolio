@@ -1144,6 +1144,14 @@ blockquote {
         /* styling */
         border: none;
     }
+    
+    .featherlight-open {
+        overflow: hidden;
+    }
+
+    .featherlight .featherlight-content {
+        overflow: hidden !important;
+    }   
 }
 
 /* handling phones and small screens */
@@ -1154,7 +1162,7 @@ blockquote {
         margin-right: 10px;
         max-height: 98%;
 
-        padding: 10px 10px 0;
+        padding: 10px 10px ;
         border-bottom: 10px solid transparent;
     }
 
